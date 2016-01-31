@@ -1,0 +1,1 @@
+C:\Development\mongo\mongodb-win32-x86_64-2008plus-2.4.9\bin\mongod --verbose --dbpath C:\Development\Code\JavaScript\node\restfulPie\db --logpath C:\Development\Code\JavaScript\node\restfulPie\logs\mongo.log

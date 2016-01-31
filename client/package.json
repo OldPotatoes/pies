@@ -1,0 +1,31 @@
+{
+  "name": "testbed",
+  "version": "1.0.0",
+  "description": "A place to build a test Aurelia SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jamie Dyer",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.19"
+  },
+  "jspm": {
+    "dependencies": {
+      "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1.0.2",
+      "aurelia-auth": "github:paulvanbladel/aurelia-auth@^0.11.7",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1",
+      "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.0.2",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.0.5",
+      "aurelia-http-client": "npm:aurelia-http-client@^1.0.0-beta.1",
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "font-awesome": "npm:font-awesome@^4.5.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
