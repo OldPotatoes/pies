@@ -69,6 +69,6 @@ var config =
     // Once logged in, we want to redirect the user to the get pies view.
     //loginRedirect: '#/api/pies',
     loginRedirect: '#/welcome',
-}
+};
 
 export default config;

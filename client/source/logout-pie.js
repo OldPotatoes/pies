@@ -1,13 +1,15 @@
 import {inject}         from 'aurelia-framework';
 import {AuthService}    from 'aurelia-auth';
 
+// jshint-ignore
 @inject(AuthService)
+// jshint-ignore-end
 export class Logout
 {
     constructor(authService)
     {
         this.authService = authService;
-    };
+    }
 
     activate()
     {
@@ -18,5 +20,5 @@ export class Logout
         .catch(error => {
             console.log("Error Logging Out");
         });
-    };
+    }
 }

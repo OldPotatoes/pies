@@ -1,7 +1,9 @@
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-http-client';
 
+// jshint-ignore
 @inject(HttpClient)
+// jshint-ignore-end
 export class Pies
 {
     constructor(http)
@@ -9,16 +11,15 @@ export class Pies
         this.http = http;
         this.heading = 'Available Pies';
         this.availablePies = '';
+        this.pieNumber = '';
     }
 
-    activate()
+    pickAPie()
     {
-        return this.http.get('http://127.0.0.1:8081/pies')
+        return this.http.get('http://127.0.0.1:8081/api/pies/:' + pieNumber)
             .then(response => {
                 var content = response.content;
-                console.log('content 1 = ' + content[0].name);
-                console.log('content 2 = ' + content[1].name);
-                console.log('content 3 = ' + content[2].name);
+                console.log('Pie = ' + content);
 
                 this.availablePies = content;
             })

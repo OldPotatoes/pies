@@ -1,7 +1,9 @@
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-http-client';
 
+// jshint-ignore
 @inject(HttpClient)
+// jshint-ignore-end
 export class Pies
 {
     constructor(http)

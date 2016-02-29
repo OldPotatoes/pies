@@ -1,7 +1,9 @@
 import {inject} from 'aurelia-framework';
 import {AuthService} from 'aurelia-auth';
 
+// jshint-ignore
 @inject(AuthService)
+// jshint-ignore-end
 export class Login
 {
     constructor(authService, http)

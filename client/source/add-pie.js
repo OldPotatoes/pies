@@ -1,7 +1,9 @@
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-http-client';
 
+// jshint-ignore
 @inject(HttpClient)
+// jshint-ignore-end
 export class Add
 {
     constructor(http)
@@ -11,7 +13,7 @@ export class Add
         this.adjective = '';
         this.pieError = '';
     }
-
+	
     createPie()
     {
         var pie =
@@ -19,6 +21,7 @@ export class Add
             adjective:  this.adjective,
             name:       this.name
         };
+
 
         console.log('pie.adjective = ' + pie.adjective);
         console.log('pie.name = ' + pie.name);

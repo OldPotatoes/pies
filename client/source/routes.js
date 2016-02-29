@@ -3,14 +3,16 @@ import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 import {AuthorizeStep} from 'aurelia-auth';
 
+// jshint-ignore
 @inject(Router)
+// jshint-ignore-end
 export default class
 {
     constructor(router)
     {
         console.log('routes.js constructor() 1');
         this.router = router;
-    };
+    }
 
     configure()
     {
@@ -42,5 +44,5 @@ export default class
 
         // The router is configured with what we specify in the appRouterConfig
         this.router.configure(appRouterConfig);
-    };
+    }
 }
